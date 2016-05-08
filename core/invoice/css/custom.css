@@ -1,0 +1,339 @@
+body {
+  background: #FFF; 
+}
+page[size="A4"] {
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+@page {
+	margin: 0;
+}
+* { -webkit-print-color-adjust: exact !important; }
+
+
+/* NORMAL CSS */
+
+#invoice-wrapper {
+	width: 21cm;
+	height: 29.7cm;
+	font-size: 0.8em;
+	overflow: hidden;
+
+}
+
+#invoice-header {
+
+}
+
+#invoice-header-logo {
+	max-height: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
+	float: left;
+}
+
+#invoice-header-logo-text {
+	margin-top: 65px;
+	margin-left: 20px;
+	font-size: 2.0em;
+	float: left;
+}
+
+#invoice-header-info-place {
+	max-width: 150px;
+	margin-left: 40px;
+	float: left;
+
+}
+
+#invoice-header-info-icon {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	color: lightgreen !important;
+	font-size: 1.3em;
+}
+
+#invoice-header-info-tel {
+	max-width: 130px;
+	margin-left: 30px;
+	float: left;
+}
+
+#invoice-header-info-web {
+	max-width: 130px;
+	margin-left: 30px;
+	float: left;
+}
+
+#invoice-data {
+	margin-top: 35px;
+	margin-left: 50px;
+	float: left;
+
+}
+
+#invoice-data span {
+	color: black;
+}
+
+#invoice-data-to {
+	color: lightgreen !important;
+}
+
+#invoice-data-invoice-text h1{
+	/*margin-left: 530px; */
+	padding-right: 50px;
+	float: right;
+	/*position: absolute;*/
+	margin-top: -60px;
+	font-size: 4.0em
+}
+
+#invoice-data-line {
+	margin-top: 0px;
+	margin-right: 50px;
+	color: lightgreen;
+	background-color: lightgreen;
+	border: 0;
+	height: 3px;
+	width: 715px;
+	float: left;
+}
+#invoice-data-to-company strong{
+	font-weight: 900;
+	font-size: 1.2em;
+	margin-top: 10px;
+	line-height: 25px;
+}
+
+#invoice-data-to-adress h5{
+	margin-top: 5px;
+	width: 200px;
+	line-height: 20px;
+}
+
+#invoice-data-datas {
+	font-size: 1.1em;
+	margin-left: 456px;
+	position: absolute;
+	margin-top: -80px;
+	text-align: right;
+}
+
+#invoice-data-number-item-1 {
+	margin-right: 15px;
+	color: lightgreen;
+	text-align: left;
+}
+
+#invoice-data-number-item-2 {
+	color: lightgreen;
+	text-align: left;
+	margin-right: 9px;
+}
+
+#invoice-data-number-item-3 {
+	margin-right:20px;
+	color: lightgreen;
+	text-align: left;
+}
+
+#invoice-data-number #invoice-data-separator {
+	margin-right: 9px;
+}
+
+#invoice-data-account #invoice-data-separator {
+	margin-right: 17.2px;
+}
+
+#invoice-data-separator {
+	padding-right: 20px;
+	padding-left: 30px;
+	position: relative;
+	text-align: left;
+}
+
+#invoice-data-item {
+	margin-right: 0px;
+	margin-left: 10px;
+	text-align: right;
+}
+
+#invoice-data-amount {
+	padding-top: 25px;
+	color: white;
+}
+
+#invoice-data-amount h5{
+	color: white;
+	text-align: left;
+	vertical-align: center;
+	float: left;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+#invoice-data-amount-value {
+	color: white;
+	font-size: 1.2em;
+	padding-top:-2px;
+	position: relative;
+}
+
+#invoice-data-amount-bg {
+	background-color: lightgreen;
+	padding: 10px;
+	margin-left: -15px;
+}
+
+#invoice-item-id {
+	margin-left: 55px;
+  	margin-top: 100px;
+  	font-size: 1.1em;
+}
+
+#invoice-item-description {
+	margin-left: 55px;
+  	margin-top: 100px;
+  	font-size: 1.1em;
+}
+
+#invoice-item-price {
+	margin-left: 0px;
+  	margin-top: 100px;
+  	font-size: 1.1em;
+  	text-align: right;
+}
+
+#invoice-item-total {
+	margin-left: 0px;
+  	margin-top: 100px;
+  	font-size: 1.1em;
+  	text-align: right;
+}
+
+#invoice-item-line {
+	margin-top: 0px;
+	margin-left: 50px;
+	color: lightgreen;
+	background-color: lightgreen;
+	border: 0;
+	height: 2px;
+	width: 86.5%;
+	float: left;
+}
+
+#invoice-item-placeholder {
+	margin-top: 140px;
+	margin-left: 50px;
+	width: 86.5%;
+	height: 240px;
+	background-color: rgb(242,242,242);
+}
+
+#invoice-item-placeholder-total {
+	margin-top: 2px;
+	margin-left: 573px;
+	width: 23%;
+	height: 100px;
+	background-color: rgb(242,242,242);
+}
+
+#invoice-item-placeholder-total-final {
+	margin-top: 2px;
+	margin-left: 573px;
+	width: 23%;
+	height: 30px;
+	background-color: lightgreen;
+}
+
+#invoice-item-placeholder-total-final p {
+	padding: 8px 20px 8px;
+	font-size: 1.2em;
+	color: #FFFFFF;
+}
+
+#invoice-item-terms {
+	float: left;
+	margin-left: 60;
+	margin-top: -120px;
+	width: 400px;
+}
+
+#invoice-item-terms h5{
+	color: lightgreen;
+	
+}
+
+#invoice-payment-data {
+	float: left;
+	margin-left: 60;
+	margin-top:  -10px;
+	width: 400px;
+}
+
+#invoice-payment-data h5{
+	color: lightgreen;
+	
+}
+
+#invoice-payment-accepted {
+	float: left;
+	margin-left: -400;
+	margin-top:  110px;
+	width: 400px;
+	margin-bottom: 15px;
+}
+
+#invoice-payment-accepted h5{
+	color: lightgreen;
+	
+}
+
+#invoice-payment-signature {
+	float: left;
+	margin-left: 500;
+	margin-top:  -150px;
+	width: 400px;
+}
+
+#invoice-payment-signature h3{
+	color: lightgreen;
+	font-size: 1.2em;
+}
+
+#invoice-payment-signature h4{
+	color: lightgreen;
+	font-size: 1.2em;
+}
+
+#invoice-payment-signature img {
+	width: 200px;
+}
+
+#invoice-footer-line {
+	margin-top: 10px;
+	margin-left: 50px;
+	color: lightgrey;
+	background-color: lightgrey;
+	border: 0;
+	height: 3px;
+	width: 86.5%;
+	float: left;
+}
+
+#invoice-footer-disclaimer h6{
+	color: lightgreen;
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 0px;
+	font-size: 1.0em;
+
+}
+
