@@ -25,3 +25,30 @@
     </h3>
     <!-- END PAGE TITLE-->
     <!-- END PAGE HEADER-->
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-green">
+                        <span class="caption-subject bold uppercase"> Questo Server</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-green">
+                        <span class="caption-subject bold uppercase"> Altri Server</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
